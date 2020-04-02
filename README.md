@@ -1,3 +1,3 @@
-# C++ Exercises
+# C++ Miscellaneous
 
-My work in my quest to learn C++
+Miscellaneous ecercises
