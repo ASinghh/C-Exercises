@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ashutosh/Desktop/CPP_Exercises/header_exp/MyFunctions.cpp
+cmath
+-
+
+/home/ashutosh/Desktop/CPP_Exercises/header_exp/MyFunctions.h
+
+/home/ashutosh/Desktop/CPP_Exercises/header_exp/header.cpp
+iostream
+-
+MyFunctions.h
+/home/ashutosh/Desktop/CPP_Exercises/header_exp/MyFunctions.h
+
