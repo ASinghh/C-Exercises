@@ -2,7 +2,7 @@
 
 #ifndef MYFUNCTIONS_H_
 #define MYFUNCTIONS_H_
-double PI = 3.14165;
+
 int my_sum(int a, int b);
 
 

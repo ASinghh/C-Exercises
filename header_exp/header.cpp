@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include "MyFunctions.h"
-
+#define PI 3.14156
 int main(){
 
 	int a = 5;
