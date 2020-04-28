@@ -15,4 +15,19 @@ class student{
   void printer();
 
 };
+
+class studentp{
+
+
+  public:
+  studentp(int grade, int age, std::string name);
+  void printer();
+  int getage();
+  private:
+  int grade_;
+  int age_;
+  std::string name_;
+
+};
+
 #endif
