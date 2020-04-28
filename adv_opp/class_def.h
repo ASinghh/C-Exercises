@@ -23,6 +23,7 @@ class studentp{
   studentp(int grade, int age, std::string name);
   void printer();
   int getage();
+  void setage(int);
   private:
   int grade_;
   int age_;

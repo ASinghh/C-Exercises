@@ -13,6 +13,7 @@ studentp::studentp(int grade, int age, std::string name): grade_(grade), age_(ag
 void studentp::printer(){std::cout<<"The student by the name of "<<name_<<", and of "<<age_<<" years of age, is in grade "<<grade_<<"\n";
 }
 int studentp::getage(){return age_;}
+void studentp::setage(int a){age_ = a;}
 
 /*class studentpv{
 
