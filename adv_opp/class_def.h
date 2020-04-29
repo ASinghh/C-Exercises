@@ -31,4 +31,20 @@ class studentp{
 
 };
 
+class studentpr{
+
+
+  public:
+  studentp(int grade, int age, std::string name);
+  void printer();
+  int getage();
+  void setage(int);
+  private:
+  int grade_;
+  int age_;
+  std::string name_;
+
+};
+
+
 #endif
