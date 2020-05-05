@@ -11,6 +11,14 @@ int main(){
 	sstp.setage(18);
 	int y = sstp.getage();
 	std::cout<<"new age is "<<y<<"\n";
+	studentp sstpr(11,16,"Jennifer Conelley");
+        sstpr.printer();
+        int z = sstpr.getage();
+        std::cout<<x<<"\n";
+        sstpr.setage(27);
+        int k = sstpr.getage();
+        std::cout<<"new age is "<<k<<"\n";
+
 	return 0;
 
 }
