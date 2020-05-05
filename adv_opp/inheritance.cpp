@@ -2,9 +2,15 @@
 #include <iostream>
 
 int main(){
-        student stud(10,15,"Chadwick Boseman");
-        stud.printer();
-	studentp sstp(12,17,"Jennifer Lawerence");
+        
+	class exp : public student
+	{public:
+exp(int grade, int age, std::string name): grade_(grade),age_(age),name_(name){}	};
+
+	exp stpx(12,17,"Jennifer Lawerence");
+	stpx.printer();
+
+	/*studentp sstp(12,17,"Jennifer Lawerence");
 	sstp.printer();
 	int x = sstp.getage();
 	std::cout<<x<<"\n";
@@ -18,7 +24,7 @@ int main(){
         sstpr.setage(27);
         int k = sstpr.getage();
         std::cout<<"new age is "<<k<<"\n";
-
+*/
 	return 0;
 
 }
