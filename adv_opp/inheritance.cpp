@@ -1,14 +1,14 @@
 #include "class_def.h"
 #include <iostream>
 
+
+
+class exprt : public student{} ;
 int main(){
         
-	class exp : public student
-	{public:
-exp(int grade, int age, std::string name): grade_(grade),age_(age),name_(name){}	};
+   
+	exprt stpx.student(12,15,"chut"); 
 
-	exp stpx(12,17,"Jennifer Lawerence");
-	stpx.printer();
 
 	/*studentp sstp(12,17,"Jennifer Lawerence");
 	sstp.printer();
