@@ -3,12 +3,16 @@
 
 
 
-class exprt : public student{} ;
+class exprt : public student{
+public:
+exprt(int grade, int age, std::string name) : student( grade, age,  name){};
+} ;
 int main(){
         
    
-	exprt stpx.student(12,15,"chut"); 
-
+	exprt stpx(12,15,"Chadwick Boseman"); 
+        stpx.printer();
+	std::cout<<stpx.name_<<std::endl;
 
 	/*studentp sstp(12,17,"Jennifer Lawerence");
 	sstp.printer();
