@@ -1,6 +1,7 @@
 #include "class_def.h"
 #include <iostream>
 
+using namespace std;
 
 
 class exprt : public student{
