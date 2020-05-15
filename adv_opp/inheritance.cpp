@@ -8,12 +8,30 @@ class exprt : public student{
 public:
 exprt(int grade, int age, std::string name) : student( grade, age,  name){};
 } ;
+
+class exprot : public studentpr{
+public:
+exprot(int grade, int age, std::string name) : studentpr( grade, age,  name){};
+void ageprinter() {
+    int age;
+    age = getage();
+    cout<<age;
+
+}
+
+} ;
+
+
 int main(){
         
    
 	exprt stpx(12,15,"Chadwick Boseman"); 
         stpx.printer();
 	std::cout<<stpx.name_<<std::endl;
+        exprot stprx(12,15,"Chadwick Boseman");
+        stprx.printer();
+        stprx.ageprinter();
+
 
 	/*studentp sstp(12,17,"Jennifer Lawerence");
 	sstp.printer();
