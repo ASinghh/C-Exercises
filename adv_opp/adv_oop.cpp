@@ -35,7 +35,7 @@ int main() {
 
     LineSegment line(1.1);
     Circle circa(line);
-    std::cout<<"area of the circle is "<<circa.GetArea()<<"circumference is "<<circa.GetCircum()<<std::endl;
+    std::cout<<"area of the circle is "<<circa.GetArea()<<"\n"<<"circumference is "<<circa.GetCircum()<<std::endl;
 
     return 0;
 }
