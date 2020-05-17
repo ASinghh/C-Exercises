@@ -32,8 +32,10 @@ float Circle::GetCircum(){
 
 
 int main() {
-
-    LineSegment line(1.1);
+    float inp;
+    std::cout<<"please enter the radius of the circle"<<std::endl;
+    std::cin>>inp;
+    LineSegment line(inp);
     Circle circa(line);
     std::cout<<"area of the circle is "<<circa.GetArea()<<"\n"<<"circumference is "<<circa.GetCircum()<<std::endl;
 
