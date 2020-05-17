@@ -51,10 +51,24 @@ class studentpr{
 
 class LineSegment{
 	public:
-	LineSegment(float length_):length(length_){};
-	protected:
-	float lenght;
+	LineSegment(float length_);
+	void PrintLen();
+	float GetLen();
+	private:
+	float length;
 
+};
+
+
+
+class Circle{
+	public:
+	Circle(LineSegment radius);
+	float GetArea();
+	float GetCircum();
+
+	private:
+	LineSegment radius_;
 };
 
 
