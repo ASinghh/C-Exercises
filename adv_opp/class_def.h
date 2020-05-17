@@ -1,4 +1,5 @@
 #include <string>
+#define pi 3.14159
 
 
 #ifndef CLASS_DEF_H
@@ -44,6 +45,15 @@ class studentpr{
   int grade_;
   int age_;
   std::string name_;
+
+};
+
+
+class LineSegment{
+	public:
+	LineSegment(float length_):length(length_){};
+	protected:
+	float lenght;
 
 };
 
