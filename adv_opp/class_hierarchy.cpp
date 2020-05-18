@@ -15,7 +15,7 @@ class B : public A
     public:
  	void product()
  	{
- 	    cout << "\nProduct= " << x * y;
+ 	    cout << "\nProduct= " << x * y<<endl;
  	}
 };
 class C : public A 
@@ -23,7 +23,7 @@ class C : public A
     public:
  	void sum()
  	{
-        cout << "\nSum= " << x + y;
+        cout << "\nSum= " << x + y<<endl;
  	}
 };
 int main()
@@ -32,7 +32,7 @@ int main()
     C obj2;    
     obj1.getdata();
     obj1.product();
-    //obj2.getdata();
-    //obj2.sum();
+    obj2.getdata();
+    obj2.sum();
     return 0;
 } 
