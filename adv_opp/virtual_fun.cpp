@@ -34,10 +34,19 @@ int main()
     base* bptr;
     derived d;
     bptr = &d;
+    base& e = d;
 
     // virtual function, binded at runtime
     bptr->print();
 
+    
+
     // Non-virtual function, binded at compile time
     bptr->show();
+
+    // Testing runtime polymorphism using reference
+    e.print();
+    e.show();
+
+    return 0;
 }
