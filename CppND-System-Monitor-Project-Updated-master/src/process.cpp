@@ -5,10 +5,21 @@
 #include <vector>
 
 #include "process.h"
+#include "linux_parser.h"
+
 
 using std::string;
 using std::to_string;
 using std::vector;
+
+Process::Process(int pid) : processId_(pid) {
+  // initialize all values
+  calculateCpuUsage();
+  determineCommand();
+  determineRam();
+  determineUptime();
+  determineUser();
+}
 
 // TODO: Return this process's ID
 int Process::Pid() { return 0; }
