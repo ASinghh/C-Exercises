@@ -3,23 +3,32 @@
 #include <sstream>
 #include <string>
 #include <vector>
-
+#include "parser_consts.h"
+#include "parser_helper.h"
 #include "process.h"
 #include "linux_parser.h"
+#include "format.h"
 
 
 using std::string;
 using std::to_string;
 using std::vector;
 
+
+
 Process::Process(int pid) : processId_(pid) {
-  // initialize all values
-  calculateCpuUsage();
-  determineCommand();
-  determineRam();
-  determineUptime();
-  determineUser();
+  // initialize all val
+ vector<string> cpuNumbers = ReadFile(pid);
+
+  utime_ = stof(cpuNumbers[13]);
+  stime_ = stof(cpuNumbers[14]);
+  cutime_ = stof(cpuNumbers[15]);
+  cstime_ = stof(cpuNumbers[16]);
+  starttime_ = stof(cpuNumbers[21]);
 }
+
+
+
 
 // TODO: Return this process's ID
 int Process::Pid() { return 0; }
