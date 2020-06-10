@@ -1,13 +1,7 @@
-#include <string>
-#include <iostream>
-#include <experimental/filesystem>
+#include <glob.h>
 
-namespace fs = std::experimental;
-
-int main() {
-
-	std::string path = "/home/ashutosh/Desktop/CPP_Exercises/adv_opp";
-	for (const auto & entry : fs::directory_iterator(path))
-		std::cout << entry.path() << std::endl;
+glob_t glob_result;
+glob("/your_directory/*",GLOB_TILDE,NULL,&glob_result);
+for(unsigned int i=0; i<glob_result.gl_pathc; i++){
+  cout << glob_result.gl_pathv[i] << endl;
 }
-
