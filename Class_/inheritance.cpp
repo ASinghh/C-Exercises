@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+# define wheelis 100
 using std::string;
 
 class Vehicle {
@@ -27,8 +28,9 @@ public:
 
 int main() 
 {
+    //int wheelis = 13;
     Car car;
-    car.wheels = 4;
+    car.wheels = wheelis;
     car.sunroof = true;
     car.Print();
     Bicycle bi;

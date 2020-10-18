@@ -4,7 +4,6 @@
 #include <iostream>
 
 
-
 LineSegment::LineSegment(float length_):length(length_){};
 
 void LineSegment::PrintLen() {
