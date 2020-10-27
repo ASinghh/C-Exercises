@@ -29,13 +29,17 @@ int main()
     p->fun_1(); 
   
     // Late binding (RTP) 
-    p->fun_2(); 
+    p->fun_2();               //run time binding happening here
   
     // Late binding (RTP) 
     p->fun_3(); 
   
     // Late binding (RTP) 
-    p->fun_4(); 
+    p->fun_4();   //cannot pass an interger here because the pointer is to the original calss
+
+
+
+    obj1.fun_4(5);
   
 
 } 
