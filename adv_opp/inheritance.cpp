@@ -1,4 +1,5 @@
-#include "class_def.h"
+//#include "class_def.h"
+#include "class_def.cpp"
 #include <iostream>
 
 using namespace std;
@@ -29,9 +30,10 @@ int main(){
 	exprt stpx(12,15,"Chadwick Boseman"); 
         stpx.printer();
 	std::cout<<stpx.name_<<std::endl;
-        exprot stprx(12,15,"Chadwick Boseman");
+        exprot stprx(12,15,"Chadwick Boseman", 223);
         stprx.printer();
         stprx.ageprinter();
+        cout<<"\n"<<stprx.expp11_<<"\n";
 
 
 	/*studentp sstp(12,17,"Jennifer Lawerence");
