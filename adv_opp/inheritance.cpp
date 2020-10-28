@@ -11,7 +11,8 @@ exprt(int grade, int age, std::string name) : student( grade, age,  name){};
 
 class exprot : public studentpr{
 public:
-exprot(int grade, int age, std::string name) : studentpr( grade, age,  name){};
+exprot(int grade, int age, std::string name, int expp11) : studentpr( grade, age,  name), expp11_(expp11){};
+int expp11_;
 void ageprinter() {
     int age;
     age = getage();
