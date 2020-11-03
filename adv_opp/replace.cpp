@@ -1,12 +1,19 @@
-#include <string>
-using namespace std;
 
-void main(){
+#include <string>
+#include <iostream>
+
+using namespace std;
+using std::string;
+using std::to_string;
+
+
+int main(){
 
     string line = "Name = Ubuntu";
-    std::replace(line.begin(), line.end(), ' ', '_');
-    std::replace(line.begin(), line.end(), '=', ' ');
-    std::replace(line.begin(), line.end(), '"', ' ');
-    cout<<line;
+    line.replace(line.begin(), line.end(), ' ', '_');
+    line.replace(line.begin(), line.end(), '=', ' ');
+    line.replace(line.begin(), line.end(), '"', ' ');
+    std::cout<<line;
+    return 0;
 
 }
