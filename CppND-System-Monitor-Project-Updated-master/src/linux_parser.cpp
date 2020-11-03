@@ -85,9 +85,9 @@ float LinuxParser::MemoryUtilization() {
         freeMemory = stof(value);
       }
     }
-    return totalMemory - freeMemory;
+   
   }
-  return 0.0;
+  return ((totalMemory - freeMemory) / totalMemory);
 
 	 }
 
