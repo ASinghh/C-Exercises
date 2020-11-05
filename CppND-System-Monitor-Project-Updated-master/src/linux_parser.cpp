@@ -197,14 +197,13 @@ int LinuxParser::TotalProcesses() {
           return stoi(value);
         }
       }
-      /*if (line.find("processes") != string::npos){
-        return stoi(line.substr(line.find(" ") + 1));
-      }*/
+      
     }
   }
 
   return 0;
 }
+
 
 // TODO: Read and return the number of running processes
 int LinuxParser::RunningProcesses() { 
@@ -218,9 +217,7 @@ int LinuxParser::RunningProcesses() {
           return stoi(value);
         }
       }
-      /*if (line.find("procs_running") != string::npos){
-        return stoi(line.substr(line.find(" ") + 1));
-      }*/
+      /
     }
   }
 
@@ -322,7 +319,7 @@ string LinuxParser::User(int pid) {
 
 // TODO: Read and return the uptime of a process
 // REMOVE: [[maybe_unused]] once you define the function
-long LinuxParser::UpTime(int pid) { 
+long int LinuxParser::UpTime(int pid) { 
   string line, info;
   int i;
 
