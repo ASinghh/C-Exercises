@@ -31,10 +31,32 @@ Process::Process(int pid) : processId_(pid) {
 
 
 // TODO: Return this process's ID
-int Process::Pid() { return 0; }
+int Process::Pid() { return processId_; }
 
 // TODO: Return this process's CPU utilization
-float Process::CpuUtilization() { return 0; }
+float Process::CpuUtilization() { 
+  long jiffies_start, jiffies_end;
+	long uptime_start, uptime_end, delta;
+
+	jiffies_start = LinuxParser::ActiveJiffies(processId_);
+  	uptime_start = LinuxParser::UpTime(processId_);
+  	// Wait 100ms
+	usleep(100000); // in microseconds
+
+	jiffies_end = LinuxParser::ActiveJiffies(processId_);
+	uptime_end = LinuxParser::UpTime(processId_);
+
+	delta = uptime_end - uptime_start;
+	// if delta is 0, it means the process doesn't use
+	// the CPU anymore
+	if (delta == 0){
+ 		return 0;
+	}
+
+	return (float)(jiffies_end - jiffies_start) / (float)(uptime_end - uptime_start);
+
+  
+ }
 
 // TODO: Return the command that generated this process
 string Process::Command() { return string(); }
