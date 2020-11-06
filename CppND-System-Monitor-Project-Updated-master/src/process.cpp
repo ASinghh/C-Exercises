@@ -16,8 +16,9 @@ using std::vector;
 
 
 
-Process::Process(int pid) : processId_(pid) {
+Process::Process(int pid){
   // initialize all val
+  processId_= pid;
  vector<string> cpuNumbers = ReadFile(pid);
 
   utime_ = stof(cpuNumbers[13]);
@@ -25,7 +26,7 @@ Process::Process(int pid) : processId_(pid) {
   cutime_ = stof(cpuNumbers[15]);
   cstime_ = stof(cpuNumbers[16]);
   starttime_ = stof(cpuNumbers[21]);
-}
+};
 
 
 
