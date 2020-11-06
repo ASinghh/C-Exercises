@@ -1,6 +1,6 @@
 #ifndef PROCESS_H
 #define PROCESS_H
-
+#include <vector>
 #include <string>
 /*
 Basic class for Process representation
@@ -20,11 +20,12 @@ class Process {
   // TODO: Declare any necessary private members
  private:
  int processId_;
- float utime_;
- float stime_;
- float cutime_;
- float cstime_;
- float starttime_ ;
+ //std::vector<std::string> cpuNumbers;
+ //float utime_;
+ //float stime_;
+ //float cutime_;
+ //float cstime_;
+ //float starttime_ ;
 };
 
 #endif
