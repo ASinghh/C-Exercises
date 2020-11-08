@@ -20,12 +20,7 @@ class Process {
   // TODO: Declare any necessary private members
  private:
  int processId_;
- //std::vector<std::string> cpuNumbers;
- //float utime_;
- //float stime_;
- //float cutime_;
- //float cstime_;
- //float starttime_ ;
+
 };
 
 #endif
