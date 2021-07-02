@@ -35,8 +35,8 @@ std::vector<float>  Runing_Avg::cal_runn_avg(std::vector<float> saved_vector, st
 	float mul_saved = saved_vector.back();
         float mul_input = input_vector.back();
         float modif = mul_saved + mul_input;
-        std::transform(saved_vector.begin(),saved_vector.end(), saved_vector.begin(), [mul_saved](float &c){return c/mul_saved;});
-        std::transform(input_vector.begin(),input_vector.end(), input_vector.begin(), [mul_input](float &c){return c/mul_input;});
+        std::transform(saved_vector.begin(),saved_vector.end(), saved_vector.begin(), [mul_saved](float &c){return c*mul_saved;});
+        std::transform(input_vector.begin(),input_vector.end(), input_vector.begin(), [mul_input](float &c){return c*mul_input;});
         assert(saved_vector.size() == input_vector.size());
         std::vector<float> result;
         std::transform(saved_vector.begin(), saved_vector.end(), input_vector.begin(),
