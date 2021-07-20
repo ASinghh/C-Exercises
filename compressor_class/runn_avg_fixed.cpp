@@ -87,7 +87,7 @@ int main(){
 
         std::vector<double> vec1 =  {1,2,3,4,0};
 	Runing_Avg_Fixed RAF(vec1,3.0);
-        std::cout<<RAF.last_saved_time<<" " <<RAF.window_size<<" "<<RAF.local_summary_vec[4]<<"\n";
+        std::cout<<RAF.local_summary_vec[4]<<"\n";
 	std::vector<double> vec2 =  {2,2,2,2,1};
         RAF.fixed_blocking(vec2);
 	std::cout<<RAF.local_summary_vec[0]<<RAF.local_summary_vec[1]<<RAF.local_summary_vec[2]<<RAF.local_summary_vec[3]<<RAF.local_summary_vec[4]<<"\n";
@@ -95,11 +95,11 @@ int main(){
 	std::vector<double> vec3 = {1,1,1,2,2};
         RAF.fixed_blocking(vec3);
         std::cout<<RAF.local_summary_vec[0]<<" "<<RAF.local_summary_vec[1]<<" "<<RAF.local_summary_vec[2]<<" " <<RAF.local_summary_vec[3]<<" " <<RAF.local_summary_vec[4]<<"\n";
-        std::cout<<RAF.last_saved_time<<" " <<RAF.window_size<<" " <<"\n";
+        std::cout<<" " <<"\n";
         std::vector<double> vec4 = {1,1,1,2,3};
         RAF.fixed_blocking(vec4);
         std::cout<<RAF.local_summary_vec[0]<<" "<<RAF.local_summary_vec[1]<<" "<<RAF.local_summary_vec[2]<<" " <<RAF.local_summary_vec[3]<<" " <<RAF.local_summary_vec[4]<<"\n";
-        std::cout<<RAF.last_saved_time<<" " <<RAF.window_size<<" "<<"\n";
+        std::cout<<" " <<"\n";
 
 
 	return 0;
