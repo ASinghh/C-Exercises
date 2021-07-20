@@ -19,7 +19,6 @@ class Runing_Avg_Fixed
 	//private:
 		double last_saved_time;
 		double window_size;
-		double current_time_step;
 		std::vector<double> local_summary_vec;
 		double getMold(const std::vector<double>&);
 		double getSimilarity(const std::vector<double>&,const std::vector<double>&);
