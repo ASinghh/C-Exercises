@@ -10,7 +10,7 @@ class Runing_Avg_Var
 
 {
         public:
-                Runing_Avg_Var(std::vector<double>);
+                Runing_Avg_Var(std::vector<double>, double);
                 void update_local_summ(const std::vector<double>&);
                 void write_local_summ();
                 std::vector<double> local_summary_vec;
@@ -20,6 +20,7 @@ class Runing_Avg_Var
         private:
                 double getMold(const std::vector<double>&);
                 double getSimilarity(const std::vector<double>&,const std::vector<double>&);
+		double threshold;
 
 };
 
